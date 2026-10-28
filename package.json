@@ -1,0 +1,24 @@
+{
+  "name": "omnicalc",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An advanced scientific calculator and universal conversion platform for web and Android.",
+  "license": "UNLICENSED",
+  "packageManager": "pnpm@10.20.0",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @omnicalc/web dev",
+    "build": "pnpm --filter @omnicalc/web build",
+    "typecheck": "pnpm --recursive --if-present typecheck",
+    "test": "pnpm --recursive --if-present test",
+    "lint": "pnpm --recursive --if-present lint",
+    "clean": "pnpm --recursive --if-present clean"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
